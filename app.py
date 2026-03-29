@@ -1,5 +1,6 @@
 import cv2
 from ultralytics import YOLO
+import pygame
 
 # The "Main" function. Logic for basic image detection is within this function.
 def main():

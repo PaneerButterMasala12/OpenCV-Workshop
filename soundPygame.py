@@ -10,12 +10,12 @@ def main():
         print("Error: Could not open webcam.")
         return
 
-    overlay_img = cv2.imread("nowra.jpg")
+    overlay_img = cv2.imread("Nowra.jpg")
     if overlay_img is None:
         print("Error: Could not load image file.")
         return
 
-    # Initialize pygame mixer for sound
+    # Initialise pygame mixer for sound
     pygame.mixer.init()
     sound = pygame.mixer.Sound("alert.wav")   # your sound effect file
 
@@ -90,5 +90,5 @@ def main():
     cv2.destroyAllWindows()
     pygame.mixer.quit()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
